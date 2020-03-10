@@ -16,3 +16,10 @@ function getStates() {
         });//end of loop
     })//end of then
 }//end of getStates
+
+
+function showAndFillCities(){
+    document.getElementById("cities").hidden = false;
+
+
+}
