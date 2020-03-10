@@ -39,10 +39,7 @@ function showAndFillCities(){
 }//end of showAndFillCities
 
 function changeToDisplay(){
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", "/", true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send(JSON.stringify({
-        value: value
-    }));
+    var x= document.getElementById("StatesID");
+    var y= document.getElementById("city");
+    window.location.href = "displayWeather?state="+x.value+"&city="+y.value;
 }//end of changeToDisplay
