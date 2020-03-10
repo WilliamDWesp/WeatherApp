@@ -40,7 +40,7 @@ function showAndFillCities(){
 
 function changeToDisplay(){
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "", true);
+    xhr.open("POST", "/", true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(JSON.stringify({
         value: value
