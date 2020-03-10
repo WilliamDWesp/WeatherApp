@@ -5,15 +5,16 @@
     <title>Document</title>
     <script src="scripts/fill_Lists.js"></script>
     <script>getStates()</script>
+    
 </head>
 <body>
     <h1>States</h1>
     <input
+    id="StatesID"
     list="states[]"
-    onclick="showAndFillCities()"
+    onchange="showAndFillCities()"
     >
     <datalist id="states[]">
-        <option>hello</option>
     </datalist>
     
     <div id="cities" hidden>
@@ -21,6 +22,12 @@
         <h1>
             Cities    
         </h1>
+        <input
+            list="cities[]"
+            onchange=
+        >
+        <datalist id="cities[]">
+        </datalist>
 
         
 
