@@ -1,0 +1,12 @@
+# Weather_App
+For Enterprise Class
+
+Commands to run to get app working:
+
+npm init  
+npm install express --save  
+npm install dotenv 
+node index.js
+
+Things needed to add:
+.env file with port=enter the port here!
