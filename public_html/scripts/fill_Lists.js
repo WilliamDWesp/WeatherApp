@@ -43,7 +43,7 @@ function changeToDisplay(){
     var y= document.getElementById("city");
 
 
-    window.location.href = "displayWeather?state="+x.value+"&city="+y.value;
+    window.location.href = "displayWeather.html?state="+x.value+"&city="+y.value;
 }//end of changeToDisplay
 
 
@@ -80,6 +80,13 @@ function getLocationWeather(){
     .then(Response=>Response.json())
     .then(Response=>{
         cord.innerHTML=JSON.stringify(Response.coord)
+        console.log(Response)
+        Main.innerHTML= "Weather: "+Response.weather[0].main
+        Maindesc.innerHTML="Weather Desc: "+ Response.weather[0].description
+        temp.innerHTML="Temp: "+(Response.main.temp-273.15)+"C";
+        feels.innerHTML="Feels Likes: "+(Response.main.feels_like-273.15+"C");
+        wind.innerHTML="Wind: "+Response.wind.speed
+        windDir.innerHTML="Wind Dir: "+Response.wind.deg
         
     })
 
